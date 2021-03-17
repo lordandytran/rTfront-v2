@@ -8,11 +8,11 @@ import { UserContext } from './UserContext';
  * @returns {React.Component} SecureRoute component
  */
 function SecureRoute(props) {
-    const [authenticated] = useContext(UserContext);
-    const Component = props.component;
-    return (
-        authenticated ? (<Component />) : <Redirect to="/login" />
-    )
+  const [authenticated] = useContext(UserContext);
+  const Component = props.component;
+  return (
+    authenticated ? (<Component />) : <Redirect to="/login" />
+  )
 }
 
 export default SecureRoute;

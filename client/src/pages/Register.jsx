@@ -25,11 +25,12 @@ function Register() {
       <div className="uk-container">
         <div className="uk-grid uk-grid-stack" uk-grid="true">
           <div className="uk-width-1-1@m">
-            <div className="uk-margin uk-width-large 
+            <div className="uk-margin 
+              uk-width-large 
               uk-margin-auto 
               uk-card 
-              uk-card-default u
-              k-card-body 
+              uk-card-default 
+              uk-card-body 
               uk-box-shadow-large">
               <div 
                 className="uk-card-title uk-text-center">rTfront Registration

@@ -13,18 +13,18 @@ import Stats from '../pages/Stats';
  * @returns {React.Component} Routes component
  */
 function Routes() {
-    return (
-        <div className="page-routes">
-            <Switch>
-                <Route exact path="/login" component={Login} />
-                <Route exact path="/register" component={Register} />
-                <SecureRoute exact path="/" component={Home} />
-                <SecureRoute exact path="/stats/:id" component={Stats} />
-                <SecureRoute exact path="/settings" component={Settings} />
-                <Route component={NotFound} />
-            </Switch>
-        </div>
-    );
+  return (
+    <div className="page-routes">
+      <Switch>
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/register" component={Register} />
+        <SecureRoute exact path="/" component={Home} />
+        <SecureRoute exact path="/stats/:id" component={Stats} />
+        <SecureRoute exact path="/settings" component={Settings} />
+        <Route component={NotFound} />
+      </Switch>
+    </div>
+  );
 }
 
 export default Routes;
